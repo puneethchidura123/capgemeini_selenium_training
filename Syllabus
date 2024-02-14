@@ -1,0 +1,53 @@
+Day-1
+========
+Introduction to Automation
+Introduction to Selenium
+Selenium WebDriver
+
+Day-2
+========
+Find element by name
+Find element by className
+Find Options in dropdown
+FindElements by tag name
+Find radio Elements
+
+Day-3
+========
+AbsoluteXpathLocator
+RelativeXpathLocator
+xPathAncestor
+Handling RegEx Selenium
+Page Navigation
+Handling textbox
+Handling Drop Down Menu
+
+Day-4
+========
+Handling Radio buttons
+Work with Javascript Executor-1
+Work with Javascript Executor-2
+CargoShipping - Dynamic Xpath
+PurchaseApp - Dynamic Xpath
+Work With Alerts
+FindElement and Handle Alert
+Multiple Window
+
+Day-5
+=======
+Web Driver Test with TestNG
+TestNG Annotation With Priority
+TestNG DistrictEPass
+CommodityDetails - TestNG
+UserDetails - TestNG
+
+
+Day-6
+=======
+Drag and drop with Slider
+Selenium Wait
+
+Day-7
+=======
+
+Selenium 4.0 and grid
