@@ -15,9 +15,16 @@ public class NavigationDemo {
         WebElement loginorregisterlink  = driver.findElement(By.xpath("//*[@id=\"customer_menu_top\"]/li/a"));
        loginorregisterlink.click();
         waitfosometime(5000);
-       driver.navigate().back();
-        waitfosometime(5000);
-        driver.navigate().forward();
+//       while(true){
+//           //waitfosometime(5000);
+//           driver.navigate().back();
+//           waitfosometime(3000);
+//           driver.navigate().forward();
+//       }
+
+        driver.navigate().refresh();
+
+
     }
 
 

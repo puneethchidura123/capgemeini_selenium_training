@@ -44,3 +44,31 @@ Xpath - pattern matching
 1) contains ::  //a[contains(text(),'Apparel')]
 
 2)  starts-with :: //a[starts-with(text(),'Apparel')]
+
+
+
+navigation
+=============
+1) driver.navigate().back();   :   to navigate back
+2)driver.navigate().forward();  :  to navigate forward
+3)driver.navigate().refresh(); : to refresh the screen
+
+
+TEXT INPUT
+===========
+
+
+1) to enter text :  sendKeys();
+WebElement loginnameTextBox = driver.findElement(By.id("loginFrm_loginname"));
+        String text_input =  "input text";
+        loginnameTextBox.sendKeys(text_input);
+
+2) To read existing / entered text ::   getText(){check this on priority} / getAttribute("value");
+
+
+3) To clear existing text ::  clear();
+
+WebElement text_area_input = driver.findElement(By.xpath("//textarea[@rows='10' and @cols='30']"));
+text_area_input.sendKeys("hello");
+text_area_input.clear();
+
