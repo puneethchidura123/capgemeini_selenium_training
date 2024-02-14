@@ -21,3 +21,26 @@ Absolute Xpath ::
 
 Relative xpath is preferred over absolute xpath
 
+
+
+Xpath access methods :
+======================
+
+
+1) Parent ::   //input[@id='loginFrm_loginname']//parent::div  {div tag above login name text box}
+
+2) Child :: //button[@title='Login']//child::i
+
+3) ancestor  :: //button[@title='Login']//ancestor::form
+
+4) following-sibling :: //a[text()='Apparel & accessories']//parent::li//following-sibling::li[3]
+
+
+
+Xpath - pattern matching
+=========================
+
+
+1) contains ::  //a[contains(text(),'Apparel')]
+
+2)  starts-with :: //a[starts-with(text(),'Apparel')]
