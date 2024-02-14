@@ -1,0 +1,23 @@
+1)
+
+navigate to https://demo.automationtesting.in/Register.html
+
+
+u will see a set fields like email, phone, name etc.....
+
+
+write a java method to print the no of mandatory fields and return their list
+
+public List<String>  getMandatoryFieldsList(){
+
+// print the count;
+
+// return the list
+}
+
+
+2) navigate to https://demo.automationtesting.in/Register.html
+
+
+print all options in the year dropdown
+

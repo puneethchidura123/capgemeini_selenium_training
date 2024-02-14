@@ -10,7 +10,8 @@ public class TextInputDemo  extends  NavigationDemo{
     public static void main(String[] args) throws Exception {
 
 
-        withGetText();
+        extractLabelText();
+        //withGetText();
 //        WebDriver driver = new ChromeDriver();
 //        driver.manage().window().maximize();
 //        String website_url = "https://automationteststore.com/";
@@ -54,5 +55,21 @@ public class TextInputDemo  extends  NavigationDemo{
         }
 
 
+    }
+
+
+    public static void extractLabelText() throws Exception {
+
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        String website_url = "https://demo.automationtesting.in/Register.html";
+        driver.get(website_url);
+        waitfosometime(2000);
+
+
+        WebElement email_label = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[3]/label"));
+        String email_text =   email_label.getText();
+
+        System.out.println("email_text  is ::: "+email_text);
     }
 }

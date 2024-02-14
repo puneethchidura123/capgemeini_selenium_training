@@ -33,7 +33,16 @@ Xpath access methods :
 
 3) ancestor  :: //button[@title='Login']//ancestor::form
 
-4) following-sibling :: //a[text()='Apparel & accessories']//parent::li//following-sibling::li[3]
+4) descendant ::
+
+5) following ::
+
+6) following-sibling :: //a[text()='Apparel & accessories']//parent::li//following-sibling::li[3]
+
+7) preceeding
+
+8) preeding - sibling ::
+
 
 
 
@@ -71,4 +80,45 @@ WebElement loginnameTextBox = driver.findElement(By.id("loginFrm_loginname"));
 WebElement text_area_input = driver.findElement(By.xpath("//textarea[@rows='10' and @cols='30']"));
 text_area_input.sendKeys("hello");
 text_area_input.clear();
+
+
+
+
+dropdown and options
+====================
+to handle drop down a select class object should be craeted using the web element object.  PFB a example
+
+WebElement skills_Dropdown = driver.findElement(By.id("Skills"));
+
+        Select skills_Dropdown_Select = new Select(skills_Dropdown);
+
+
+        three ways to select an option
+
+1) skills_Dropdown_Select.selectByVisibleText("C");   : selects by text
+
+2) skills_Dropdown_Select.selectByIndex(1); : selects by index
+
+3) kills_Dropdown_Select.selectByValue("Adobe Photoshop");
+
+
+
+how to get the selected option ??
+----------------------------------
+
+selected_option =   skills_Dropdown_Select.getFirstSelectedOption();
+        select_option_as_string =   selected_option.getText();
+
+
+how to print all options ??
+-----------------------------
+
+List<WebElement> skill_options = skills_Dropdown_Select.getOptions();
+
+         for(WebElement webElement: skill_options){
+             System.out.println(webElement.getText());
+         }
+
+
+
 
