@@ -1,0 +1,23 @@
+Xpath
+
+
+Relative Xpath ::
+
+
+Absolute Xpath ::
+
+
+
+for logo in "https://automationteststore.com/"
+
+Relative Xpath ::
+  //img[@title='Automation Test Store']
+
+Absolute Xpath ::
+
+    /html/body/div/header/div[1]/div/div[1]/a/img
+
+
+
+Relative xpath is preferred over absolute xpath
+
