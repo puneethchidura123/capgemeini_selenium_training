@@ -33,15 +33,15 @@ Xpath access methods :
 
 3) ancestor  :: //button[@title='Login']//ancestor::form
 
-4) descendant ::
+4) descendant ::  //*[@id="eid"]//descendant::input
 
-5) following ::
+5) following ::  //*[@id="eid"]//following::input
 
 6) following-sibling :: //a[text()='Apparel & accessories']//parent::li//following-sibling::li[3]
 
-7) preceeding
+7) preceeding  :: //*[@id="eid"]//preceeding::input
 
-8) preeding - sibling ::
+8) preeding - sibling ::  //*[@id="eid"]//preceeding-sibling::input
 
 
 
@@ -54,6 +54,14 @@ Xpath - pattern matching
 
 2)  starts-with :: //a[starts-with(text(),'Apparel')]
 
+
+
+css selector - pattern matching
+================================
+
+1) Starts with = ^ - input[ng-model^="Email"]
+2) ends with = $ - input[ng-model$="ilAdress"]
+3) contains = *  - input[ng-model*="ilAdress"]
 
 
 navigation
