@@ -55,3 +55,25 @@ Handling dynamic web tables with dynamic xpath
 
 
 
+Handling Alerts
+---------------------
+Below code generated an objected of the generated alert!!!
+
+Alert generated_alert = driver.switchTo().alert();
+
+1) to accept alert : generated_alert.accept();
+2) to dismiss alert : generated_alert.dismiss();
+3) to get alert text : generated_alert.getText();
+
+
+
+Handling Windows
+---------------------
+
+
+
+
+
+
+
+
