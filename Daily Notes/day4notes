@@ -1,0 +1,57 @@
+handling radio buttons
+========================
+
+to check if the radio button is selected :: isSelected()  // this methods returns boolean
+
+
+
+to click/select the required radio button :  click()  // returns void.
+
+
+
+JavaScript Executor
+=====================
+
+
+to display an alert :
+-----------------------
+JavascriptExecutor javascriptExecutor  = (JavascriptExecutor) driver;
+        javascriptExecutor.executeScript("alert('hello world!')");
+
+
+to perform click operation :
+-----------------------------
+
+WebElement continue_button_at_registration = driver.findElement(By.cssSelector("button[title='Continue']"));
+        javascriptExecutor.executeScript("arguments[0].click()",continue_button_at_registration);
+
+
+how to perform scroll :
+------------------------------
+
+
+javascriptExecutor.executeScript("window.scrollBy(0,200)");   - to  a particular point
+
+
+to change any existing property like colour etc....
+------------------------------------------------------
+
+
+
+WebElement create_account_label = driver.findElement(By.xpath("//span[@class='maintext']"));
+            waitfosometime(500);
+            javascriptExecutor.executeScript("arguments[0].setAttribute('style','color:red')",create_account_label);
+
+
+
+
+
+
+
+Handling dynamic web tables with dynamic xpath
+-------------------------------------------------
+
+
+
+
+
