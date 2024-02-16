@@ -6,3 +6,7 @@ WebDriver - import org.openqa.selenium.WebDriver;
 WebElement - import org.openqa.selenium.WebElement;
 ChromeDriver - import org.openqa.selenium.chrome.ChromeDriver;
 JavascriptExecutor - import org.openqa.selenium.JavascriptExecutor;
+
+TestNG
+=========
+@Test - import org.testng.annotations.Test;
