@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class TestNGDemo {
 
-    @Test(priority = -784)
+    @Test(enabled = false,groups = "first group")
     public void simpleTestCase1(){
 
         int a = 1;
@@ -23,7 +23,7 @@ public class TestNGDemo {
         Assert.assertEquals(1+2,3);
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3,groups = "second group")
     public void simpleTestCase3(){
 
         int a = 1;
@@ -41,7 +41,7 @@ public class TestNGDemo {
         Assert.assertEquals(1+2,3);
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4,groups = "last group")
     public void simpleTestCase5(){
 
         int a = 1;

@@ -1,10 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestSuite">
-    <test name="Test">
+    <test name="Test-1">
         <classes>
             <class name="com.org.capgemini.seleniumtraining.day5.TestNGDemo" />
-            <!--<class name="com.org.capgemini.seleniumtraining.day5.TestNGDemo1" />  -->
            <!-- Add more classes as needed -->
         </classes>
+    </test>
+    <test name="Test-2">
+<classes>
+    <class name="com.org.capgemini.seleniumtraining.day5.TestNGDemo1" />
+</classes>
     </test>
 </suite>
