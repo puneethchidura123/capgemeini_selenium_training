@@ -21,7 +21,7 @@ public class WindowHandling {
 
         String parent_window_handele =   driver.getWindowHandle();
         System.out.println("parent_window_handele :: "+parent_window_handele);
-        WebElement open_new_windowButton = driver.findElement(By.id("newWindowBtn"));
+        WebElement open_new_windowButton = driver.findElement(By.id("newTabBtn"));
         open_new_windowButton.click();
 
         Set<String> window_handles =  driver.getWindowHandles();
@@ -36,10 +36,15 @@ public class WindowHandling {
         }
 
 
-        System.out.println("before switching ::: "+driver.getTitle());
-        driver.switchTo().window(child_window_handel);
-        System.out.println("after switching ::: "+driver.getTitle());
-        //driver.switchTo().window(parent_window_handle);
+
+        while(true){
+            System.out.println("before switching ::: "+driver.getTitle());
+            driver.switchTo().window(child_window_handel);
+            System.out.println("after switching ::: "+driver.getTitle());
+            waitfosometime(1000);
+            driver.switchTo().window(parent_window_handele);
+        }
+
         //System.out.println("After switching back to parent ::: "+driver.getTitle());
 
 

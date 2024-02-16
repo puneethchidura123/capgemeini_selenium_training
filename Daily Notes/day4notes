@@ -69,6 +69,11 @@ Alert generated_alert = driver.switchTo().alert();
 
 Handling Windows
 ---------------------
+1) get the current window handle :: driver.getWindowHandle();
+2) get all window handles (including the parent) :: driver.getWindowHandles();
+
+
+
 
 
 
