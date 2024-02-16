@@ -14,7 +14,7 @@ public class TestNGDemo {
         Assert.assertEquals(1+2,3);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,invocationCount = 4)
     public void simpleTestCase7(){
 
         int a = 1;
