@@ -16,8 +16,29 @@ public List<String>  getMandatoryFieldsList(){
 }
 
 
-2) navigate to https://demo.automationtesting.in/Register.html
+2) validate the data persistency fo all the fileds where the user can enter a input post page refresh
+
+steps
+=====
+a) navigate to https://automationteststore.com/index.php?rt=account/create
+b) provide input to all the possible fields
+c) refresh the page
+e) check if the input given before as part of step : b   still persists or not/
+f) if input given persists as it is fail the test case, if the input doesnt persists as it is , fail the test case
 
 
-print all options in the year dropdown
 
+3)  give url where the different Vulnerabilities of various softwares are shown categorically along with the count  in tabular format
+
+write code to get the list of all those softwares which are Vulnerable under a particular category.  If the given category is not available
+PFB the method signature
+
+public List<String>  getVulnerables(String url,String category){
+}
+
+
+write code to get the information of all those softwares which are Vulnerable under a particular category in the format of {software_name,vulnerability count}.  If the given category is not available
+PFB the method signature
+
+public Map<String,String>  getVulnerableInformation(String url,String category){
+}
