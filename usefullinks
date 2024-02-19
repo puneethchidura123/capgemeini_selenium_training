@@ -12,9 +12,11 @@ https://www.w3schools.com/html/html_tables.asp   - tables
 
 
 TestNg Documentation ::   https://testng.org/#_testng_documentation
-
-
 Actions Class : https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html
+ExpectedConditions - https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html
 
 
 Seelenium Waits - https://www.selenium.dev/selenium/web/dynamic.html
+
+
+
