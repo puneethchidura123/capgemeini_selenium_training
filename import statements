@@ -10,6 +10,7 @@ TakesScreenshot - import org.openqa.selenium.TakesScreenshot;
 Actions - import org.openqa.selenium.interactions.Actions;
 
 WebDriverWait - import org.openqa.selenium.support.ui.WebDriverWait;
+ExpectedConditions - import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 TestNG
