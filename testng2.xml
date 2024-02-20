@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+    <test name="Test-1">
+        <parameter name="browser_name" value="opera"></parameter>
+        <classes>
+            <class name="com.org.capgemini.seleniumtraining.day7.TestNGDataProvider" />
+           <!-- Add more classes as needed -->
+        </classes>
+    </test>
+</suite>
