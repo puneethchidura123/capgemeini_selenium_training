@@ -1,0 +1,11 @@
+to start hub ::  java -jar selenium-server-4.17.0.jar hub
+
+to start node ::  java -jar selenium-server-4.17.0.jar node --port <port_number> (in standalone mode)
+
+
+to start node ::  java -jar selenium-server-4.17.0.jar node --port <port_number>  --hub <url_of_hub>  (in distributed mode)
+
+
+
+
+
